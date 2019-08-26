@@ -1,9 +1,7 @@
 syntax = "proto3";
 
 service ProtoHubService {
-
-  rpc UploadSpec (UploadSpecRequest) returns (UploadSpecResponseResponse);
-
+  rpc UploadSpec (UploadSpecRequest) returns (UploadSpecResponse);
 }
 
 message UploadSpecRequest {
@@ -15,7 +13,7 @@ message UploadSpecRequest {
 
 message UploadSpecResponse {
     Status status = 1;
-  }
+}
 
 message Status {
   int32 code = 1;  
